@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer List</title>
+</head>
+<body>
+    <h3>Employee Directory</h3>
+    <br/>
+    <a th:href="@{/test/showFormForAdd}" > Add Customer</a>
+<table border="1">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="tempCustomer : ${customers}">
+            <td th:text="${tempCustomer.firstName}"></td>
+            <td th:text="${tempCustomer.lastName}"></td>
+            <td th:text="${tempCustomer.email}"></td>
+            <td ><a th:href="@{/test/showFormForUpdate(customerId=${tempCustomer.id})}">Update</a>
+                 <a th:href="@{/test/delete(customerId=${tempCustomer.id})}">Delete</a></td>
+        </tr>
+    </tbody>
+
+</table>
+
+</body>
+</html>
