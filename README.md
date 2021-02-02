@@ -7,8 +7,10 @@ A project designed for people to manage their customer.
 
 Front-end:
 Thymeleaf
+
 Back-end:
 Spring MVC + SpringBoot + Spring Data JPA
+
 Database:
 MySQL
 
