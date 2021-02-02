@@ -5,7 +5,7 @@ A project designed for people to manage their customer.
 
 ## Tech/framework used
 
-Front-end:
+Template engine:
 Thymeleaf
 
 Back-end:
